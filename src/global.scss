@@ -16,7 +16,8 @@
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-ion-title {
+ion-title,
+ion-label {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
@@ -36,4 +37,17 @@ p {
 }
 .item-inner {
   border: 0 !important;
+}
+
+ion-header {
+  box-shadow: 0 0 5px;
+}
+.menu-bottom {
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
+  padding: 10px 50px;
+  img {
+    opacity: 0.6;
+  }
 }

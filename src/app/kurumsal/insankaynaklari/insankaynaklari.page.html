@@ -1,9 +1,92 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>insankaynaklari</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>İnsan Kaynakları</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button
+        (click)="onSubmitForm()"
+        [disabled]="!form.valid"
+        [routerLink]="['/', 'anasayfa']"
+      >
+        <ion-icon name="checkmark" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <form [formGroup]="form">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Ad-Soyad</ion-label>
+            <ion-input
+              type="text"
+              autocomplete
+              autocorrect
+              formControlName="adSoyad"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">E-mail Adresiniz</ion-label>
+            <ion-input
+              type="email"
+              autocomplete
+              autocorrect
+              formControlName="email"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating">Telefon Numaranız</ion-label>
+            <ion-input
+              type="number"
+              formControlName="telefon"
+              maxlength="11"
+            ></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row
+        *ngIf="!form.get('telefon').valid && form.get('telefon').touched"
+      >
+        <ion-col size-sm="6" offset-sm="3">
+          <p>Telefon numarası boş veya 11 karakterden fazla olamaz</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-item>
+            <ion-label position="floating" autocomplete autocorrect
+              >Kullandığınız Programlama Dilleri</ion-label
+            >
+            <ion-textarea rows="4" formControlName="progBil"></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button
+            (click)="onSubmitForm()"
+            [disabled]="!form.valid"
+            color="primary"
+            expand="block"
+            [routerLink]="['/', 'anasayfa']"
+          >
+            Gönder
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
 </ion-content>
