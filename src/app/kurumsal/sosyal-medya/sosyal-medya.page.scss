@@ -1,0 +1,36 @@
+.timeline-box {
+  margin-top: 20px;
+  margin: 15px;
+  text-align: center;
+}
+.thumb-info {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  max-width: 100%;
+}
+.thumb-info-title {
+  transition: all 0.3s;
+  background: rgba(36, 27, 28, 0.9);
+  bottom: 10%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: -1px;
+  padding: 9px 11px 9px;
+  position: absolute;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.thumb-info .thumb-info-inner {
+  transition: all 0.3s;
+  display: block;
+  white-space: nowrap;
+}
+.boxes {
+  margin: auto;
+}
