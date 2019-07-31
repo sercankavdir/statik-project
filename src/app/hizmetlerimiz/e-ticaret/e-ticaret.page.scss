@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+}
+
+#skills-list li {
+  position: relative;
+}
+
+#skills-list li i {
+  position: absolute;
+  left: -2em;
+}
