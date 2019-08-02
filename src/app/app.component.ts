@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+
   pages = [
     {
       title: 'Anasayfa',
@@ -20,27 +21,27 @@ export class AppComponent {
       children: [
         {
           title: 'Hakkımızda',
-          url: '/hakkimizda'
+          url: '/kurumsal/hakkimizda'
         },
         {
           title: 'Misyonumuz / Vizyonumuz',
-          url: '/misyon-vizyon'
+          url: '/kurumsal/misyon-vizyon'
         },
         {
           title: 'Banka Hesap Bilgileri',
-          url: '/banka-hesap'
+          url: '/kurumsal/banka-hesap'
         },
         {
           title: 'Ekibimiz',
-          url: '/ekibimiz'
+          url: '/kurumsal/ekibimiz'
         },
         {
           title: 'İnsan Kaynaklari',
-          url: '/insankaynaklari'
+          url: '/kurumsal/insankaynaklari'
         },
         {
           title: 'Sosyal Medya',
-          url: '/sosyal-medya'
+          url: '/kurumsal/sosyal-medya'
         }
       ]
     },
@@ -49,39 +50,39 @@ export class AppComponent {
       children: [
         {
           title: 'Kurumsal Web Sitesi',
-          url: '/kurumsal-web'
+          url: '/hizmetlerimiz/kurumsal-web'
         },
         {
           title: 'E-ticaret Sistemleri',
-          url: '/e-ticaret'
+          url: '/hizmetlerimiz/e-ticaret'
         },
         {
           title: 'Özel Yazılım Çözümleri',
-          url: '/ozel-yazilim'
+          url: '/hizmetlerimiz/ozel-yazilim'
         },
         {
           title: 'İnternet Reklamcılığı',
-          url: '/internet-reklam'
+          url: '/hizmetlerimiz/internet-reklam'
         },
         {
           title: 'Sosyal Medya Yöneticiliği',
-          url: '/sosyal-medya-yonetimi'
+          url: '/hizmetlerimiz/sosyal-medya-yonetimi'
         },
         {
           title: 'Mobil Uygulama',
-          url: '/mobil-uygulama'
+          url: '/hizmetlerimiz/mobil-uygulama'
         },
         {
           title: 'Domain / Hosting Hizmetleri',
-          url: '/domain-hosting'
+          url: '/hizmetlerimiz/domain-hosting'
         },
         {
           title: 'Kurumsal Kimlik Çalışmaları',
-          url: '/kurumsal-kimlik'
+          url: '/hizmetlerimiz/kurumsal-kimlik'
         },
         {
           title: 'Tasarım',
-          url: '/tasarim'
+          url: '/hizmetlerimiz/tasarim'
         }
       ]
     },
@@ -90,11 +91,11 @@ export class AppComponent {
       children: [
         {
           title: 'Neler Yaptık',
-          url: '/neler-yaptik'
+          url: '/referanslarimiz/neler-yaptik'
         },
         {
           title: 'Kimlerle Çalıştık',
-          url: '/kimlerle-calistik'
+          url: '/referanslarimiz/kimlerle-calistik'
         }
       ]
     }

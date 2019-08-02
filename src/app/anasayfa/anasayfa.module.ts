@@ -1,5 +1,6 @@
-import { HizmetlerimizPage } from './../hizmetlerimiz/hizmetlerimiz.page';
-import { KurumsalPage } from './../kurumsal/kurumsal.page';
+import { MusteriGirisiPage } from './../musteri-girisi/musteri-girisi.page';
+import { BizeUlasinPage } from './../bize-ulasin/bize-ulasin.page';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -8,6 +9,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AnasayfaPage } from './anasayfa.page';
+import { TeklifAlinPage } from '../teklif-alin/teklif-alin.page';
 
 const routes: Routes = [
   {
@@ -15,16 +17,16 @@ const routes: Routes = [
     component: AnasayfaPage
   },
   {
-    path: 'anasayfa',
-    component: AnasayfaPage
+    path: 'bize-ulasin',
+    component: BizeUlasinPage
   },
   {
-    path: 'kurumsal',
-    component: KurumsalPage
+    path: 'teklif-alin',
+    component: TeklifAlinPage
   },
   {
-    path: 'hizmetlerimiz',
-    component: HizmetlerimizPage
+    path: 'musteri-girisi',
+    component: MusteriGirisiPage
   }
 
 ];
@@ -36,6 +38,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AnasayfaPage, KurumsalPage, HizmetlerimizPage]
+  declarations: [AnasayfaPage, BizeUlasinPage, TeklifAlinPage, MusteriGirisiPage]
 })
 export class AnasayfaPageModule { }

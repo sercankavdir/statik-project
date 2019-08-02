@@ -4,18 +4,3 @@
 // styles are for the entire app and not just one component. Additionally, this
 // file can hold Sass mixins, functions, and placeholder classes to be imported
 // and used throughout the application.
-
-.active {
-  --ion-text-color: var(--ion-color-primary);
-  ion-icon {
-    --ion-text-color-rgb: var(--ion-color-primary);
-  }
-}
-
-.active-parent {
-  font-weight: 500;
-}
-
-.sub-item {
-  font-size: small;
-}

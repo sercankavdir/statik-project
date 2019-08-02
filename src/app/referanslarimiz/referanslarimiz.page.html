@@ -1,10 +1,23 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Referanslarımız</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content> </ion-content>
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="anasayfa">
+        <ion-label>Ana Sayfa</ion-label>
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="teklif-alin">
+        <ion-label>Teklif Alın</ion-label>
+        <ion-icon name="card"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="bize-ulasin">
+        <ion-label>Bize Ulaşın</ion-label>
+        <ion-icon name="pulse"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="musteri-girisi">
+        <ion-label>Müsteri Girişi</ion-label>
+        <ion-icon name="body"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
