@@ -1,9 +1,84 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>bize-ulasin</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/anasayfa"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bize Ulaşın</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content id="content">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" text-center>
+        <h4>
+          Şirket
+          <strong style="color: #0088cc">Adresi</strong>
+        </h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-item lines="none">
+          <ion-label text-wrap>
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="label-text">
+              <strong> Adres: </strong>
+              1593/1 Sokak No: 4 <br />Mansuroğlu Mahallesi <br />B Blok Kat: 1
+              Daire: 11 <br />
+              <strong> Lider Centrio Bayraklı - İZMİR </strong>
+            </span>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label text-wrap>
+            <i class="fas fa-phone-alt"></i>
+            <span class="label-text">
+              <strong> Sabit: </strong>
+              (232) 502 08 27
+            </span>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label text-wrap>
+            <i class="fas fa-phone-alt"></i>
+            <span class="label-text">
+              <strong> Ofis: </strong>
+              (533) 140 69 96
+            </span>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label text-wrap>
+            <i class="fas fa-phone-alt"></i>
+            <span class="label-text">
+              <strong> Yönetim: </strong>
+              (539) 207 69 96
+            </span>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label text-wrap>
+            <i class="fas fa-envelope"></i>
+            <span class="label-text">
+              <strong> Email: </strong>
+              info@statikyazilim.com.tr
+            </span>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5552649113315!2d27.178744915606817!3d38.45174038069408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962ac5928841d%3A0xe88ee000f0f7013a!2zU3RhdGlrIFlhesSxbMSxbQ!5e0!3m2!1str!2str!4v1564988642521!5m2!1str!2str"
+          frameborder="0"
+          width="100%"
+          height="300"
+          style="border:0; "
+          allowfullscreen
+        ></iframe>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

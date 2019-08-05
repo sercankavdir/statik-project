@@ -23,4 +23,4 @@ const routes: Routes = [
   ],
   declarations: [TeklifAlinPage]
 })
-export class TeklifAlinPageModule {}
+export class TeklifAlinPageModule { }
